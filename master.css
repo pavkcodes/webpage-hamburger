@@ -1,0 +1,73 @@
+/*CSS BY PAVAN*/
+*{
+    margin:0;padding:0;
+}
+html{scroll-behavior: smooth;}
+.bg{
+    background: rgba(0, 0, 0, 0.7) url('img/5040007.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+header{
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(29, 20, 20, 0.973);
+    height: 200px;
+}
+header{
+    display: flex;
+}
+header .lftnav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: rgb(48, 66, 66);
+    list-style: none;
+}
+header .lftnav img{
+    border-radius: 25px;
+    border: 1px solid white;
+    /* padding: 0 5px; */
+}
+header .lftnav h1{
+    padding: 0 10px;
+}
+header .lftnav li{
+    padding: 0 35px;
+    justify-content: center;
+}
+header .lftnav li a{
+    text-decoration: none;
+    color: rgb(139, 131, 179);
+}
+header .rgtnav{
+    display: flex;
+    width: 30%;
+    justify-content: right;
+    margin: auto;
+    padding: 0 25px;
+}
+.burger{
+    position: absolute ;
+    right: 5%;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width: 900px){
+    header{flex-direction: column;
+    transition: all 0.5s ease-out;}
+    .lftnav{flex-direction: column;}
+    .burger{display: block;}
+    .h-nav{
+        height: 33px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
